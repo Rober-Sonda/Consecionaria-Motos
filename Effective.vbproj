@@ -1,0 +1,1246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF96359F-2F01-47FE-9D98-C659ACC39357}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Effective.My.MyApplication</StartupObject>
+    <RootNamespace>Effective</RootNamespace>
+    <AssemblyName>Effective</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Effective\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationVersion>2.2.3.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Effective.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Effective.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3ABCA5BC60A1A8C202DE70251C0501BAA9FA7CD3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Effective_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Sin título-3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OnBarcode.Barcode.WinForms">
+      <HintPath>dlls\Net40\OnBarcode.Barcode.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="zxing, Version=0.16.5.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.5\lib\net40\zxing.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.5.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.5\lib\net40\zxing.presentation.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="ZXing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Clases\Ciudades.vb" />
+    <Compile Include="Clases\Colores.vb" />
+    <Compile Include="Clases\Dominio.vb" />
+    <Compile Include="Clases\Personas.vb" />
+    <Compile Include="Formularios\FrmAgregarColores.Designer.vb">
+      <DependentUpon>FrmAgregarColores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmAgregarColores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAgregarGastos.Designer.vb">
+      <DependentUpon>FrmAgregarGastos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmAgregarGastos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAgruparDesagruparModelosArt.Designer.vb">
+      <DependentUpon>FrmAgruparDesagruparModelosArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmAgruparDesagruparModelosArt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCodBarras.Designer.vb">
+      <DependentUpon>FrmCodBarras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCodBarras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCompraArticulos.Designer.vb">
+      <DependentUpon>FrmCompraArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCompraArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmGridVista.Designer.vb">
+      <DependentUpon>FrmGridVista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmGridVista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAgruparDesagrupar.Designer.vb">
+      <DependentUpon>FrmAgruparDesagrupar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmAgruparDesagrupar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAgruparDesagruparCategorias.Designer.vb">
+      <DependentUpon>FrmAgruparDesagruparCategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmAgruparDesagruparCategorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmBuscarArtVenta.Designer.vb">
+      <DependentUpon>FrmBuscarArtVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmBuscarArtVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCambiarMarca.Designer.vb">
+      <DependentUpon>FrmCambiarMarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCambiarMarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCiudades.Designer.vb">
+      <DependentUpon>FrmCiudades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCiudades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCompras.Designer.vb">
+      <DependentUpon>FrmCompras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCompras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmElegirTipoGastos.Designer.vb">
+      <DependentUpon>FrmElegirTipoGastos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmElegirTipoGastos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmIngresePrecio.Designer.vb">
+      <DependentUpon>FrmIngresePrecio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmIngresePrecio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMarcas.Designer.vb">
+      <DependentUpon>FrmMarcas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmMarcas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmModelos.Designer.vb">
+      <DependentUpon>FrmModelos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmModelos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmOpcionCategoriasArt.Designer.vb">
+      <DependentUpon>FrmOpcionCategoriasArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmOpcionCategoriasArt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPagarCuota.Designer.vb">
+      <DependentUpon>FrmPagarCuota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPagarCuota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPersonas.Designer.vb">
+      <DependentUpon>FrmPersonas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPersonas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPrevisualizar.Designer.vb">
+      <DependentUpon>FrmPrevisualizar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPrevisualizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmProveedores.Designer.vb">
+      <DependentUpon>FrmProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmSeleccionMultiple.Designer.vb">
+      <DependentUpon>FrmSeleccionMultiple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmSeleccionMultiple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmTelefonos.Designer.vb">
+      <DependentUpon>FrmTelefonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmTelefonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmVentas.Designer.vb">
+      <DependentUpon>FrmVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_AgregarArticulos.Designer.vb">
+      <DependentUpon>Frm_AgregarArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_AgregarArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_AgregarCategorias.Designer.vb">
+      <DependentUpon>Frm_AgregarCategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_AgregarCategorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_AgregarFormulario.Designer.vb">
+      <DependentUpon>Frm_AgregarFormulario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_AgregarFormulario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_AgregarMotos.Designer.vb">
+      <DependentUpon>Frm_AgregarMotos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_AgregarMotos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Backup.Designer.vb">
+      <DependentUpon>Frm_Backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Cambiar_Clave.Designer.vb">
+      <DependentUpon>Frm_Cambiar_Clave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Cambiar_Clave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Cantidad.Designer.vb">
+      <DependentUpon>Frm_Cantidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Cantidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_EntreFechas.Designer.vb">
+      <DependentUpon>Frm_EntreFechas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_EntreFechas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_InforExtra.Designer.vb">
+      <DependentUpon>Frm_InforExtra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_InforExtra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Marcas_Articulos.Designer.vb">
+      <DependentUpon>Frm_Marcas_Articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Marcas_Articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mensaje_Advertencia.Designer.vb">
+      <DependentUpon>Frm_Mensaje_Advertencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mensaje_Advertencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mensaje_Aviso.Designer.vb">
+      <DependentUpon>Frm_Mensaje_Aviso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mensaje_Aviso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mensaje_Correcto.Designer.vb">
+      <DependentUpon>Frm_Mensaje_Correcto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mensaje_Correcto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mensaje_Info.Designer.vb">
+      <DependentUpon>Frm_Mensaje_Info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mensaje_Info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mensaje_RYesNo.Designer.vb">
+      <DependentUpon>Frm_Mensaje_RYesNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Mensaje_RYesNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_ModeloArticulo.Designer.vb">
+      <DependentUpon>Frm_ModeloArticulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_ModeloArticulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Motos.Designer.vb">
+      <DependentUpon>Frm_Motos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Motos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmActualizacionPrecios.Designer.vb">
+      <DependentUpon>FrmActualizacionPrecios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmActualizacionPrecios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\Motos.vb" />
+    <Compile Include="Modulos\ConfigRegional.vb" />
+    <Compile Include="Modulos\Memoria.vb" />
+    <Compile Include="Modulos\Modulo.vb" />
+    <Compile Include="Modulos\VariablesGlobales.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\FrmAgregarColores.resx">
+      <DependentUpon>FrmAgregarColores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmAgregarGastos.resx">
+      <DependentUpon>FrmAgregarGastos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmAgruparDesagruparModelosArt.resx">
+      <DependentUpon>FrmAgruparDesagruparModelosArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCodBarras.resx">
+      <DependentUpon>FrmCodBarras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCompraArticulos.resx">
+      <DependentUpon>FrmCompraArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmGridVista.resx">
+      <DependentUpon>FrmGridVista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmAgruparDesagrupar.resx">
+      <DependentUpon>FrmAgruparDesagrupar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmAgruparDesagruparCategorias.resx">
+      <DependentUpon>FrmAgruparDesagruparCategorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmBuscarArtVenta.resx">
+      <DependentUpon>FrmBuscarArtVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCambiarMarca.resx">
+      <DependentUpon>FrmCambiarMarca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCiudades.resx">
+      <DependentUpon>FrmCiudades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCompras.resx">
+      <DependentUpon>FrmCompras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmElegirTipoGastos.resx">
+      <DependentUpon>FrmElegirTipoGastos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmIngresePrecio.resx">
+      <DependentUpon>FrmIngresePrecio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmMarcas.resx">
+      <DependentUpon>FrmMarcas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmModelos.resx">
+      <DependentUpon>FrmModelos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmOpcionCategoriasArt.resx">
+      <DependentUpon>FrmOpcionCategoriasArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPagarCuota.resx">
+      <DependentUpon>FrmPagarCuota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPersonas.resx">
+      <DependentUpon>FrmPersonas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPrevisualizar.resx">
+      <DependentUpon>FrmPrevisualizar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmProveedores.resx">
+      <DependentUpon>FrmProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmSeleccionMultiple.resx">
+      <DependentUpon>FrmSeleccionMultiple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmTelefonos.resx">
+      <DependentUpon>FrmTelefonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmVentas.resx">
+      <DependentUpon>FrmVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_AgregarArticulos.resx">
+      <DependentUpon>Frm_AgregarArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_AgregarCategorias.resx">
+      <DependentUpon>Frm_AgregarCategorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_AgregarFormulario.resx">
+      <DependentUpon>Frm_AgregarFormulario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_AgregarMotos.resx">
+      <DependentUpon>Frm_AgregarMotos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Backup.resx">
+      <DependentUpon>Frm_Backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Cambiar_Clave.resx">
+      <DependentUpon>Frm_Cambiar_Clave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Cantidad.resx">
+      <DependentUpon>Frm_Cantidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_EntreFechas.resx">
+      <DependentUpon>Frm_EntreFechas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_InforExtra.resx">
+      <DependentUpon>Frm_InforExtra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Marcas_Articulos.resx">
+      <DependentUpon>Frm_Marcas_Articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Mensaje_Advertencia.resx">
+      <DependentUpon>Frm_Mensaje_Advertencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Mensaje_Aviso.resx">
+      <DependentUpon>Frm_Mensaje_Aviso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Mensaje_Correcto.resx">
+      <DependentUpon>Frm_Mensaje_Correcto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Mensaje_Info.resx">
+      <DependentUpon>Frm_Mensaje_Info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Mensaje_RYesNo.resx">
+      <DependentUpon>Frm_Mensaje_RYesNo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_ModeloArticulo.resx">
+      <DependentUpon>Frm_ModeloArticulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Motos.resx">
+      <DependentUpon>Frm_Motos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmActualizacionPrecios.resx">
+      <DependentUpon>FrmActualizacionPrecios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Effective_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Iconos\ACEPTAR\AMARILLO\" />
+    <Folder Include="Iconos\ACEPTAR\AZUL\" />
+    <Folder Include="Iconos\ACEPTAR\ROJO\" />
+    <Folder Include="Iconos\AGREGAR\AMARILLO\" />
+    <Folder Include="Iconos\AGREGAR\AZUL\" />
+    <Folder Include="Iconos\AGREGAR\ROJO\" />
+    <Folder Include="Iconos\AGREGAR\VERDE\" />
+    <Folder Include="Iconos\ALUMNOS\AMARILLO\" />
+    <Folder Include="Iconos\ALUMNOS\AZUL\" />
+    <Folder Include="Iconos\ALUMNOS\ROJO\" />
+    <Folder Include="Iconos\ALUMNOS\VERDE\" />
+    <Folder Include="Iconos\ATRAS\AMARILLO\" />
+    <Folder Include="Iconos\ATRAS\AZUL\" />
+    <Folder Include="Iconos\ATRAS\ROJO\" />
+    <Folder Include="Iconos\ATRAS\VERDE\" />
+    <Folder Include="Iconos\AYUDA\AMARILLO\" />
+    <Folder Include="Iconos\AYUDA\AZUL\" />
+    <Folder Include="Iconos\AYUDA\ROJO\" />
+    <Folder Include="Iconos\AYUDA\VERDE\" />
+    <Folder Include="Iconos\CANCELAR\AZUL\" />
+    <Folder Include="Iconos\CANCELAR\VERDE\" />
+    <Folder Include="Iconos\CLIENTES\AMARILLO\" />
+    <Folder Include="Iconos\CLIENTES\AZUL\" />
+    <Folder Include="Iconos\CLIENTES\ROJO\" />
+    <Folder Include="Iconos\CLIENTES\VERDE\" />
+    <Folder Include="Iconos\COMPRAS\AZUL\" />
+    <Folder Include="Iconos\COMPRAS\ROJO\" />
+    <Folder Include="Iconos\COMPRAS\VERDE\" />
+    <Folder Include="Iconos\ELIMINAR\AZUL\" />
+    <Folder Include="Iconos\ELIMINAR\VERDE\" />
+    <Folder Include="Iconos\EMAIL\AMARILLO\" />
+    <Folder Include="Iconos\EMAIL\AZUL\" />
+    <Folder Include="Iconos\EMAIL\ROJO\" />
+    <Folder Include="Iconos\EMAIL\VERDE\" />
+    <Folder Include="Iconos\GEOGRAFIA\AZUL\" />
+    <Folder Include="Iconos\GEOGRAFIA\ROJO\" />
+    <Folder Include="Iconos\GEOGRAFIA\VERDE\" />
+    <Folder Include="Iconos\GUARDAR\AMARILLO\" />
+    <Folder Include="Iconos\GUARDAR\AZUL\" />
+    <Folder Include="Iconos\GUARDAR\ROJO\" />
+    <Folder Include="Iconos\GUARDAR\VERDE\" />
+    <Folder Include="Iconos\LIMPIAR\AMARILLO\" />
+    <Folder Include="Iconos\LIMPIAR\AZUL\" />
+    <Folder Include="Iconos\LIMPIAR\ROJO\" />
+    <Folder Include="Iconos\LIMPIAR\VERDE\" />
+    <Folder Include="Iconos\MODIFICAR\AZUL\" />
+    <Folder Include="Iconos\MODIFICAR\ROJO\" />
+    <Folder Include="Iconos\PROVEEDORES\AMARILLO\" />
+    <Folder Include="Iconos\PROVEEDORES\AZUL\" />
+    <Folder Include="Iconos\PROVEEDORES\ROJO\" />
+    <Folder Include="Iconos\PROVEEDORES\VERDE\" />
+    <Folder Include="Iconos\REPORTES\AZUL\" />
+    <Folder Include="Iconos\REPORTES\ROJO\" />
+    <Folder Include="Iconos\REPORTES\VERDE\" />
+    <Folder Include="Iconos\SIGUIENTE\AMARILLO\" />
+    <Folder Include="Iconos\SIGUIENTE\AZUL\" />
+    <Folder Include="Iconos\SIGUIENTE\ROJO\" />
+    <Folder Include="Iconos\SIGUIENTE\VERDE\" />
+    <Folder Include="Iconos\VENTAS\VERDE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\ACEPTAR\icon-ok.png" />
+    <None Include="Iconos\ACEPTAR\icon-ok1.png" />
+    <None Include="dlls\Net40\zxing.dll" />
+    <None Include="dlls\Net40\zxing.presentation.dll" />
+    <Content Include="fondocpmotos.ico" />
+    <Content Include="Iconos\ACEPTAR\icons8_Checked_100px.png" />
+    <Content Include="Iconos\ACEPTAR\icons8_Checked_40px.png" />
+    <Content Include="Iconos\ACEPTAR\icons8_Check_File_30px.png" />
+    <Content Include="Iconos\ACEPTAR\icons8_Check_File_30px_1.png" />
+    <Content Include="Iconos\ACEPTAR\VERDE\icons8-check-all.png" />
+    <Content Include="Iconos\ACEPTAR\VERDE\icons8-checkmark.png" />
+    <Content Include="Iconos\ACEPTAR\VERDE\icons8-ok%281%29.png" />
+    <Content Include="Iconos\ACEPTAR\VERDE\icons8-ok%282%29.png" />
+    <Content Include="Iconos\ACEPTAR\VERDE\icons8-ok%283%29.png" />
+    <Content Include="Iconos\ACEPTAR\VERDE\icons8-ok%284%29.png" />
+    <Content Include="Iconos\ACEPTAR\VERDE\icons8-ok.png" />
+    <Content Include="Iconos\ADVERTENCIA\icons8_Error_100px.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add%281%29.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add%282%29.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add%283%29.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add%284%29.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add-list%281%29.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add-list%282%29.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add-list.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add-new%281%29.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add-new%282%29.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add-new.png" />
+    <Content Include="Iconos\AGREGAR\icons8-add.png" />
+    <Content Include="Iconos\AGREGAR\icons8_Add_File_30px.png" />
+    <Content Include="Iconos\AGREGAR\icons8_Checkmark_25px.png" />
+    <Content Include="Iconos\AGREGAR\icons8_Checkmark_30px.png" />
+    <Content Include="Iconos\AGREGAR\icons8_Plus_Math_30px.png" />
+    <Content Include="Iconos\ALUMNOS\icons8_Add_User_Male_40px.png" />
+    <Content Include="Iconos\ALUMNOS\icons8_User_40px.png" />
+    <None Include="Iconos\ARCHIVAR\icon-archivar.png" />
+    <None Include="Iconos\ARCHIVAR\icon-archivar1.png" />
+    <Content Include="Iconos\ARTICULOS\AMARILLO\icons8-box%282%29.png" />
+    <Content Include="Iconos\ARTICULOS\AMARILLO\icons8-box%285%29.png" />
+    <Content Include="Iconos\ARTICULOS\AMARILLO\icons8-move-stock%284%29.png" />
+    <Content Include="Iconos\ARTICULOS\AMARILLO\icons8-move-stock.png" />
+    <Content Include="Iconos\ARTICULOS\AMARILLO\icons8_Box_40px.png" />
+    <Content Include="Iconos\ARTICULOS\AZUL\icons8-box%287%29.png" />
+    <Content Include="Iconos\ARTICULOS\AZUL\icons8-box.png" />
+    <Content Include="Iconos\ARTICULOS\AZUL\icons8-move-stock%281%29.png" />
+    <Content Include="Iconos\ARTICULOS\AZUL\icons8-move-stock%285%29.png" />
+    <None Include="Iconos\NOTIFICACIONES\Notification_50px.png" />
+    <None Include="Iconos\CANCELAR\icon-cancel.png" />
+    <None Include="Iconos\ATRAS\Back To_30px1.png" />
+    <None Include="Iconos\ATRAS\Back To_30px2.png" />
+    <None Include="Iconos\ATRAS\Back To_30px3.png" />
+    <None Include="Iconos\ATRAS\Back To_30px4.png" />
+    <None Include="Iconos\ATRAS\Back To_30px5.png" />
+    <None Include="Iconos\CANCELAR\icon-cancel1.png" />
+    <Content Include="Iconos\COLORES\icons8-paleta-de-pintura-100.png" />
+    <None Include="Resources\Back To_30px.png" />
+    <None Include="Iconos\icons8-menú-50.png" />
+    <None Include="Iconos\icons8-menu-40px.png" />
+    <None Include="Iconos\MENU\icons8-menú-40.png" />
+    <None Include="Iconos\MENU\icons8-menU-40.png" />
+    <None Include="Iconos\MARCAS\honda-genuine-parts-250x250.png" />
+    <None Include="Iconos\MENSUAL\icons8-horas-extras-100.png" />
+    <None Include="Resources\14902823_1167522496651608_4424538264297145374_o1.jpg" />
+    <None Include="Iconos\MARCAS\Honda-560x3611.png" />
+    <None Include="Iconos\MARCAS\Honda-560x3612.png" />
+    <None Include="Iconos\MARCAS\honda-genuine-parts-250x2501.png" />
+    <None Include="Iconos\MARCAS\honda-genuine-parts-250x2502.png" />
+    <None Include="Iconos\MENSUAL\icons8-horas-extras-1001.png" />
+    <None Include="Iconos\LOGO CPMOTOS\avercomoqueda.png" />
+    <Content Include="Resources\byn.png" />
+    <None Include="Resources\CpMotos.ico" />
+    <None Include="Resources\fondocpmotos.ico" />
+    <Content Include="Resources\Logo-CP-ByC.png" />
+    <Content Include="Sin título-3.ico" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Resources\14902823_1167522496651608_4424538264297145374_o.jpg" />
+    <None Include="Resources\Effective-Logo7.png" />
+    <None Include="Resources\Effective-Logo51.png" />
+    <None Include="Resources\Effective-Logo5.png" />
+    <None Include="Resources\Effective-Logo4.png" />
+    <None Include="Resources\Effective-Logo2.jpg" />
+    <None Include="Resources\Effective-Logo1.jpg" />
+    <None Include="Resources\Effective-Logo.jpg" />
+    <None Include="Iconos\ARTICULOS\Box_40px.png" />
+    <None Include="Iconos\ARTICULOS\Box_add_40px.png" />
+    <None Include="Iconos\ARTICULOS\Box_Delete_40px.png" />
+    <None Include="Iconos\ARTICULOS\Box_Edit_40px.png" />
+    <None Include="Iconos\ARTICULOS\Box_Find_40px.png" />
+    <None Include="Iconos\ARTICULOS\Box_Find_30px.png" />
+    <None Include="Iconos\ARTICULOS\Box_Find_25px.png" />
+    <None Include="Iconos\ARTICULOS\Box_30px.png" />
+    <Content Include="Iconos\ARTICULOS\ROJO\icons8-box%281%29.png" />
+    <Content Include="Iconos\ARTICULOS\ROJO\icons8-box%286%29.png" />
+    <Content Include="Iconos\ARTICULOS\ROJO\icons8-move-stock%282%29.png" />
+    <Content Include="Iconos\ARTICULOS\ROJO\icons8-move-stock%283%29.png" />
+    <Content Include="Iconos\ARTICULOS\VERDE\icons8-box%283%29.png" />
+    <Content Include="Iconos\ARTICULOS\VERDE\icons8-box%284%29.png" />
+    <None Include="Iconos\ATRAS\Back_Arrow_40px.png" />
+    <None Include="Iconos\ATRAS\Back To_30px.png" />
+    <Content Include="Iconos\ATRAS\icons8_Back_Arrow_40px.png" />
+    <Content Include="Iconos\ATRAS\icons8_Go_Back_40px.png" />
+    <Content Include="Iconos\AYUDA\icons8-help%281%29.png" />
+    <Content Include="Iconos\AYUDA\icons8-help.png" />
+    <Content Include="Iconos\AYUDA\icons8_About_40px.png" />
+    <Content Include="Iconos\AYUDA\icons8_Help_40px.png" />
+    <Content Include="Iconos\AYUDA\icons8_Help_40px_1.png" />
+    <Content Include="Iconos\AYUDA\icons8_Info_40px.png" />
+    <None Include="Iconos\BUSCAR\Search_25px.png" />
+    <Content Include="Iconos\CANCELAR\AMARILLO\icons8-cancel%281%29.png" />
+    <Content Include="Iconos\CANCELAR\AMARILLO\icons8_File_Delete_30px.png" />
+    <None Include="Iconos\CANCELAR\Cancel_25px.png" />
+    <None Include="Iconos\CANCELAR\Cancel_30px.png" />
+    <Content Include="Iconos\CANCELAR\icons8_Cancel_40px.png" />
+    <Content Include="Iconos\CANCELAR\icons8_Cancel_40px_1.png" />
+    <Content Include="Iconos\CANCELAR\ROJO\icons8-cancel%282%29.png" />
+    <Content Include="Iconos\CANCELAR\ROJO\icons8-cancel%283%29.png" />
+    <Content Include="Iconos\CANCELAR\ROJO\icons8-cancel%284%29.png" />
+    <Content Include="Iconos\CANCELAR\ROJO\icons8-cancel%285%29.png" />
+    <Content Include="Iconos\CANCELAR\ROJO\icons8-cancel%286%29.png" />
+    <Content Include="Iconos\CANCELAR\ROJO\icons8-cancel%287%29.png" />
+    <Content Include="Iconos\CANCELAR\ROJO\icons8-cancel.png" />
+    <None Include="Iconos\CERRAR\Close_30px.png" />
+    <None Include="Iconos\CATEGORIAS\Categorize_100px.png" />
+    <Content Include="Iconos\CERRAR\icons8_Close_Pane_32px.png" />
+    <Content Include="Iconos\CERRAR\icons8_Close_Pane_32px_1.png" />
+    <Content Include="Iconos\CERRAR\icons8_Close_Pane_40px.png" />
+    <Content Include="Iconos\CERRAR\icons8_Close_Pane_40px_1.png" />
+    <Content Include="Iconos\CERRAR\icons8_Close_Window_32px.png" />
+    <Content Include="Iconos\CERRAR\icons8_Close_Window_32px_1.png" />
+    <Content Include="Iconos\CERRAR\icons8_Close_Window_40px.png" />
+    <Content Include="Iconos\CERRAR\icons8_Close_Window_40px_1.png" />
+    <Content Include="Iconos\CERRAR\icons8_Exit_40px.png" />
+    <Content Include="Iconos\CERRAR\icons8_Logout_Rounded_Up_40px.png" />
+    <Content Include="Iconos\CERRAR\icons8_Shutdown_40px.png" />
+    <Content Include="Iconos\CERRAR\icons8_Signin_40px.png" />
+    <None Include="Iconos\CLIENTES\Add Administrator_40px.png" />
+    <None Include="Iconos\CLIENTES\Find_Administrator_40px.png" />
+    <Content Include="Iconos\CLIENTES\icons8-user %281%29.png" />
+    <Content Include="Iconos\CLIENTES\icons8-user %282%29.png" />
+    <Content Include="Iconos\CLIENTES\icons8-user %283%29.png" />
+    <Content Include="Iconos\CLIENTES\icons8-user %284%29.png" />
+    <Content Include="Iconos\CLIENTES\icons8-user %285%29.png" />
+    <Content Include="Iconos\CLIENTES\icons8-user %286%29.png" />
+    <Content Include="Iconos\CLIENTES\icons8-user %287%29.png" />
+    <Content Include="Iconos\CLIENTES\icons8-user.png" />
+    <None Include="Iconos\CLIENTES\icons8_Add Administrator_40px.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Admin_40px.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Denied_40px.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Edit_Account_40px.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Edit_Account_40px_1.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Edit_Account_40px_2.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Find_User_Male_20px.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Find_User_Male_30px.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Find_User_Male_40px.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Registration_40px.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Remove_Administrator_40px.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Remove_Administrator_40px_1.png" />
+    <Content Include="Iconos\CLIENTES\icons8_Search_20px.png" />
+    <Content Include="Iconos\CLIENTES\icons8_User_40px.png" />
+    <None Include="Iconos\COMPRAS\AMARILLO\Buy_40px.png" />
+    <Content Include="Iconos\COMPRAS\icons8-shopping-cart.png" />
+    <Content Include="Iconos\COMPRAS\icons8_Buying_40px.png" />
+    <Content Include="Iconos\COMPRAS\icons8_Shopping_Cart_40px.png" />
+    <None Include="Iconos\CONFIGURACION\Settings_40px.png" />
+    <Content Include="Iconos\CONSIGNACIONES\AMARILLO\icons8-handshake%285%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\AMARILLO\icons8-handshake.png" />
+    <Content Include="Iconos\CONSIGNACIONES\AMARILLO\icons8-helping-hand%281%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\AMARILLO\icons8-helping-hand%285%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\AMARILLO\icons8_Handshake_40px.png" />
+    <Content Include="Iconos\CONSIGNACIONES\AMARILLO\icons8_Meeting_40px.png" />
+    <Content Include="Iconos\CONSIGNACIONES\AZUL\icons8-handshake%282%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\AZUL\icons8-handshake%287%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\AZUL\icons8-helping-hand%282%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\AZUL\icons8-helping-hand%283%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\ROJO\icons8-handshake%281%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\ROJO\icons8-handshake%286%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\ROJO\icons8-helping-hand%284%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\ROJO\icons8-helping-hand.png" />
+    <Content Include="Iconos\CONSIGNACIONES\VERDE\icons8-handshake%283%29.png" />
+    <Content Include="Iconos\CONSIGNACIONES\VERDE\icons8-handshake%284%29.png" />
+    <None Include="Iconos\ELIMINAR\AMARILLO\Waste_25px.png" />
+    <None Include="Iconos\CUOTAS\Pay Wall_40px.png" />
+    <None Include="Iconos\CUOTAS\Cuota_40px.png" />
+    <None Include="Iconos\CUOTAS\Expensive Price _40px.png" />
+    <None Include="Iconos\ELIMINAR\AMARILLO\icons8-delete%283%29.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete%281%29.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete%282%29.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete%283%29.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete%284%29.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete%285%29.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete%286%29.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete%287%29.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete%288%29.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete%289%29.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete-file.png" />
+    <Content Include="Iconos\ELIMINAR\icons8-delete.png" />
+    <Content Include="Iconos\ELIMINAR\icons8_Delete_25px.png" />
+    <Content Include="Iconos\ELIMINAR\icons8_Delete_30px.png" />
+    <Content Include="Iconos\ELIMINAR\icons8_Delete_File_30px.png" />
+    <Content Include="Iconos\ELIMINAR\icons8_File_Delete_30px_1.png" />
+    <None Include="Iconos\ELIMINAR\ROJO\icons8-delete%284%29.png" />
+    <None Include="Iconos\ELIMINAR\ROJO\icons8-delete%288%29.png" />
+    <None Include="Iconos\ELIMINAR\ROJO\icons8-delete%286%29.png" />
+    <None Include="Iconos\ELIMINAR\ROJO\icons8-delete%287%29.png" />
+    <None Include="Iconos\ELIMINAR\Waste_25px.png" />
+    <Content Include="Iconos\EMAIL\icons8-email%281%29.png" />
+    <Content Include="Iconos\EMAIL\icons8-email%282%29.png" />
+    <Content Include="Iconos\EMAIL\icons8-email.png" />
+    <Content Include="Iconos\ERROR\icons8_Delete_Message_100px.png" />
+    <Content Include="Iconos\ERROR\icons8_Delete_Message_100px_2.png" />
+    <Content Include="Iconos\ERROR\icons8_Sad_Cloud_100px.png" />
+    <None Include="Iconos\GEOGRAFIA\AMARILLO\Argentina Map_100px.png" />
+    <None Include="Iconos\GEOGRAFIA\Google Maps_100px.png" />
+    <Content Include="Iconos\GEOGRAFIA\icons8-geography-filled.png" />
+    <Content Include="Iconos\GEOGRAFIA\icons8-globe-filled.png" />
+    <None Include="Iconos\GEOGRAFIA\Navigation_100px.png" />
+    <Content Include="Iconos\GUARDAR\icons8-save%281%29.png" />
+    <Content Include="Iconos\GUARDAR\icons8-save%282%29.png" />
+    <Content Include="Iconos\GUARDAR\icons8-save%283%29.png" />
+    <Content Include="Iconos\GUARDAR\icons8-save.png" />
+    <Content Include="Iconos\GUARDAR\icons8_Save_40px.png" />
+    <None Include="Iconos\GUARDAR\Save_30px.png" />
+    <None Include="Iconos\GUARDAR\Ok_30px.png" />
+    <Content Include="Iconos\HERRAMIENTAS\AMARILLO\icons8_Maintenance_32px_3.png" />
+    <Content Include="Iconos\HERRAMIENTAS\AMARILLO\icons8_Maintenance_40px.png" />
+    <Content Include="Iconos\HERRAMIENTAS\AMARILLO\Maintenance_32px.png" />
+    <Content Include="Iconos\HERRAMIENTAS\AZUL\icons8_Maintenance_32px_1.png" />
+    <Content Include="Iconos\HERRAMIENTAS\icons8_Automatic_40px.png" />
+    <Content Include="Iconos\HERRAMIENTAS\icons8_Maintenance_32px.png" />
+    <Content Include="Iconos\HERRAMIENTAS\icons8_Maintenance_32px_1.png" />
+    <Content Include="Iconos\HERRAMIENTAS\icons8_Maintenance_32px_2.png" />
+    <Content Include="Iconos\HERRAMIENTAS\icons8_Maintenance_32px_3.png" />
+    <Content Include="Iconos\HERRAMIENTAS\icons8_Maintenance_40px.png" />
+    <Content Include="Iconos\HERRAMIENTAS\icons8_Settings_40px.png" />
+    <Content Include="Iconos\HERRAMIENTAS\ROJO\icons8_Maintenance_32px.png" />
+    <Content Include="Iconos\HERRAMIENTAS\VERDE\icons8_Maintenance_32px_2.png" />
+    <Content Include="Iconos\HOME\AMARILLO\icons8-home%281%29.png" />
+    <Content Include="Iconos\HOME\AMARILLO\icons8-home%284%29.png" />
+    <Content Include="Iconos\HOME\AMARILLO\icons8-home-page%282%29.png" />
+    <Content Include="Iconos\HOME\AMARILLO\icons8_Home_40px.png" />
+    <Content Include="Iconos\HOME\AZUL\icons8-home%286%29.png" />
+    <Content Include="Iconos\HOME\AZUL\icons8-home-page.png" />
+    <Content Include="Iconos\HOME\ROJO\icons8-home%282%29.png" />
+    <Content Include="Iconos\HOME\ROJO\icons8-home%285%29.png" />
+    <Content Include="Iconos\HOME\ROJO\icons8-home-page%281%29.png" />
+    <Content Include="Iconos\HOME\VERDE\icons8-home%283%29.png" />
+    <Content Include="Iconos\HOME\VERDE\icons8-home-page%283%29.png" />
+    <Content Include="Iconos\HOME\VERDE\icons8-home.png" />
+    <Content Include="Iconos\icons8-add%281%29.png" />
+    <Content Include="Iconos\icons8-add%282%29.png" />
+    <Content Include="Iconos\icons8-add%283%29.png" />
+    <Content Include="Iconos\icons8-add%284%29.png" />
+    <Content Include="Iconos\icons8-add-list%281%29.png" />
+    <Content Include="Iconos\icons8-add-list%282%29.png" />
+    <Content Include="Iconos\icons8-add-list.png" />
+    <Content Include="Iconos\icons8-add-new%281%29.png" />
+    <Content Include="Iconos\icons8-add-new%282%29.png" />
+    <Content Include="Iconos\icons8-add-new.png" />
+    <Content Include="Iconos\icons8-add.png" />
+    <Content Include="Iconos\icons8-back-arrow%281%29.png" />
+    <Content Include="Iconos\icons8-back-arrow.png" />
+    <Content Include="Iconos\icons8-box%281%29.png" />
+    <Content Include="Iconos\icons8-box%282%29.png" />
+    <Content Include="Iconos\icons8-box%283%29.png" />
+    <Content Include="Iconos\icons8-box%284%29.png" />
+    <Content Include="Iconos\icons8-box%285%29.png" />
+    <Content Include="Iconos\icons8-box%286%29.png" />
+    <Content Include="Iconos\icons8-box%287%29.png" />
+    <Content Include="Iconos\icons8-box.png" />
+    <Content Include="Iconos\icons8-broom%281%29.png" />
+    <Content Include="Iconos\icons8-broom%282%29.png" />
+    <Content Include="Iconos\icons8-broom%283%29.png" />
+    <Content Include="Iconos\icons8-broom%284%29.png" />
+    <Content Include="Iconos\icons8-broom%285%29.png" />
+    <Content Include="Iconos\icons8-broom%286%29.png" />
+    <Content Include="Iconos\icons8-broom%287%29.png" />
+    <Content Include="Iconos\icons8-broom%288%29.png" />
+    <Content Include="Iconos\icons8-broom.png" />
+    <Content Include="Iconos\icons8-cancel%281%29.png" />
+    <Content Include="Iconos\icons8-cancel%282%29.png" />
+    <Content Include="Iconos\icons8-cancel%283%29.png" />
+    <Content Include="Iconos\icons8-cancel%284%29.png" />
+    <Content Include="Iconos\icons8-cancel%285%29.png" />
+    <Content Include="Iconos\icons8-cancel%286%29.png" />
+    <Content Include="Iconos\icons8-cancel%287%29.png" />
+    <Content Include="Iconos\icons8-cancel.png" />
+    <Content Include="Iconos\icons8-check-all.png" />
+    <Content Include="Iconos\icons8-checkmark.png" />
+    <Content Include="Iconos\icons8-delete%281%29.png" />
+    <Content Include="Iconos\icons8-delete%282%29.png" />
+    <Content Include="Iconos\icons8-delete%283%29.png" />
+    <Content Include="Iconos\icons8-delete%284%29.png" />
+    <Content Include="Iconos\icons8-delete%285%29.png" />
+    <Content Include="Iconos\icons8-delete%286%29.png" />
+    <Content Include="Iconos\icons8-delete%287%29.png" />
+    <Content Include="Iconos\icons8-delete%288%29.png" />
+    <Content Include="Iconos\icons8-delete%289%29.png" />
+    <Content Include="Iconos\icons8-delete-file.png" />
+    <Content Include="Iconos\icons8-delete.png" />
+    <Content Include="Iconos\icons8-deployment%281%29.png" />
+    <Content Include="Iconos\icons8-deployment%282%29.png" />
+    <Content Include="Iconos\icons8-deployment%283%29.png" />
+    <Content Include="Iconos\icons8-deployment%284%29.png" />
+    <Content Include="Iconos\icons8-deployment%285%29.png" />
+    <Content Include="Iconos\icons8-deployment%286%29.png" />
+    <Content Include="Iconos\icons8-deployment%287%29.png" />
+    <Content Include="Iconos\icons8-deployment.png" />
+    <Content Include="Iconos\icons8-edit%281%29.png" />
+    <Content Include="Iconos\icons8-edit%282%29.png" />
+    <Content Include="Iconos\icons8-edit%283%29.png" />
+    <Content Include="Iconos\icons8-edit%284%29.png" />
+    <Content Include="Iconos\icons8-edit-file.png" />
+    <Content Include="Iconos\icons8-edit.png" />
+    <Content Include="Iconos\icons8-email%281%29.png" />
+    <Content Include="Iconos\icons8-email%282%29.png" />
+    <Content Include="Iconos\icons8-email.png" />
+    <Content Include="Iconos\icons8-forward-button%281%29.png" />
+    <Content Include="Iconos\icons8-forward-button.png" />
+    <Content Include="Iconos\icons8-geography-filled.png" />
+    <Content Include="Iconos\icons8-globe-filled.png" />
+    <Content Include="Iconos\icons8-handlebar-mustache%281%29.png" />
+    <Content Include="Iconos\icons8-handlebar-mustache%282%29.png" />
+    <Content Include="Iconos\icons8-handlebar-mustache%283%29.png" />
+    <Content Include="Iconos\icons8-handlebar-mustache.png" />
+    <Content Include="Iconos\icons8-handshake%281%29.png" />
+    <Content Include="Iconos\icons8-handshake%282%29.png" />
+    <Content Include="Iconos\icons8-handshake%283%29.png" />
+    <Content Include="Iconos\icons8-handshake%284%29.png" />
+    <Content Include="Iconos\icons8-handshake%285%29.png" />
+    <Content Include="Iconos\icons8-handshake%286%29.png" />
+    <Content Include="Iconos\icons8-handshake%287%29.png" />
+    <Content Include="Iconos\icons8-handshake.png" />
+    <Content Include="Iconos\icons8-help%281%29.png" />
+    <Content Include="Iconos\icons8-help.png" />
+    <Content Include="Iconos\icons8-helping-hand%281%29.png" />
+    <Content Include="Iconos\icons8-helping-hand%282%29.png" />
+    <Content Include="Iconos\icons8-helping-hand%283%29.png" />
+    <Content Include="Iconos\icons8-helping-hand%284%29.png" />
+    <Content Include="Iconos\icons8-helping-hand%285%29.png" />
+    <Content Include="Iconos\icons8-helping-hand.png" />
+    <Content Include="Iconos\icons8-home%281%29.png" />
+    <Content Include="Iconos\icons8-home%282%29.png" />
+    <Content Include="Iconos\icons8-home%283%29.png" />
+    <Content Include="Iconos\icons8-home%284%29.png" />
+    <Content Include="Iconos\icons8-home%285%29.png" />
+    <Content Include="Iconos\icons8-home%286%29.png" />
+    <Content Include="Iconos\icons8-home-page%281%29.png" />
+    <Content Include="Iconos\icons8-home-page%282%29.png" />
+    <Content Include="Iconos\icons8-home-page%283%29.png" />
+    <Content Include="Iconos\icons8-home-page.png" />
+    <Content Include="Iconos\icons8-home.png" />
+    <Content Include="Iconos\icons8-move-stock%281%29.png" />
+    <Content Include="Iconos\icons8-move-stock%282%29.png" />
+    <Content Include="Iconos\icons8-move-stock%283%29.png" />
+    <Content Include="Iconos\icons8-move-stock%284%29.png" />
+    <Content Include="Iconos\icons8-move-stock%285%29.png" />
+    <Content Include="Iconos\icons8-move-stock.png" />
+    <Content Include="Iconos\icons8-ok%281%29.png" />
+    <Content Include="Iconos\icons8-ok%282%29.png" />
+    <Content Include="Iconos\icons8-ok%283%29.png" />
+    <Content Include="Iconos\icons8-ok%284%29.png" />
+    <Content Include="Iconos\icons8-ok.png" />
+    <Content Include="Iconos\icons8-safety-hat %281%29.png" />
+    <Content Include="Iconos\icons8-safety-hat %282%29.png" />
+    <Content Include="Iconos\icons8-safety-hat %283%29.png" />
+    <Content Include="Iconos\icons8-safety-hat %284%29.png" />
+    <Content Include="Iconos\icons8-safety-hat %285%29.png" />
+    <Content Include="Iconos\icons8-safety-hat %286%29.png" />
+    <Content Include="Iconos\icons8-safety-hat %287%29.png" />
+    <Content Include="Iconos\icons8-safety-hat.png" />
+    <Content Include="Iconos\icons8-save%281%29.png" />
+    <Content Include="Iconos\icons8-save%282%29.png" />
+    <Content Include="Iconos\icons8-save%283%29.png" />
+    <Content Include="Iconos\icons8-save.png" />
+    <Content Include="Iconos\icons8-sell%281%29.png" />
+    <Content Include="Iconos\icons8-sell%282%29.png" />
+    <Content Include="Iconos\icons8-sell%283%29.png" />
+    <Content Include="Iconos\icons8-sell%284%29.png" />
+    <Content Include="Iconos\icons8-sell%285%29.png" />
+    <Content Include="Iconos\icons8-sell.png" />
+    <Content Include="Iconos\icons8-shopping-cart.png" />
+    <Content Include="Iconos\icons8-supplier %281%29.png" />
+    <Content Include="Iconos\icons8-supplier %282%29.png" />
+    <Content Include="Iconos\icons8-supplier%281%29.png" />
+    <Content Include="Iconos\icons8-supplier%2810%29.png" />
+    <Content Include="Iconos\icons8-supplier%2811%29.png" />
+    <Content Include="Iconos\icons8-supplier%2812%29.png" />
+    <Content Include="Iconos\icons8-supplier%2813%29.png" />
+    <Content Include="Iconos\icons8-supplier%2814%29.png" />
+    <Content Include="Iconos\icons8-supplier%2815%29.png" />
+    <Content Include="Iconos\icons8-supplier%2816%29.png" />
+    <Content Include="Iconos\icons8-supplier%282%29.png" />
+    <Content Include="Iconos\icons8-supplier%283%29.png" />
+    <Content Include="Iconos\icons8-supplier%284%29.png" />
+    <Content Include="Iconos\icons8-supplier%285%29.png" />
+    <Content Include="Iconos\icons8-supplier%286%29.png" />
+    <Content Include="Iconos\icons8-supplier%287%29.png" />
+    <Content Include="Iconos\icons8-supplier%289%29.png" />
+    <Content Include="Iconos\icons8-supplier.png" />
+    <Content Include="Iconos\icons8-truck-filled.png" />
+    <Content Include="Iconos\icons8-truck.png" />
+    <Content Include="Iconos\icons8-user %281%29.png" />
+    <Content Include="Iconos\icons8-user %282%29.png" />
+    <Content Include="Iconos\icons8-user %283%29.png" />
+    <Content Include="Iconos\icons8-user %284%29.png" />
+    <Content Include="Iconos\icons8-user %285%29.png" />
+    <Content Include="Iconos\icons8-user %286%29.png" />
+    <Content Include="Iconos\icons8-user %287%29.png" />
+    <Content Include="Iconos\icons8-user.png" />
+    <Content Include="Iconos\icons8_Automatic_40px.png" />
+    <Content Include="Iconos\icons8_Maintenance_32px.png" />
+    <Content Include="Iconos\icons8_Maintenance_32px_1.png" />
+    <Content Include="Iconos\icons8_Maintenance_32px_2.png" />
+    <Content Include="Iconos\icons8_Maintenance_32px_3.png" />
+    <Content Include="Iconos\icons8_Maintenance_40px.png" />
+    <Content Include="Iconos\icons8_Symbian_100px.png" />
+    <Content Include="Iconos\icons8_Symbian_100px_2.png" />
+    <None Include="Iconos\IMPRIMIR\Print1_100px.png" />
+    <None Include="Iconos\IMPRIMIR\icons8_Print_40px.png" />
+    <Content Include="Iconos\INFORMACION\icons8_About_100px_1.png" />
+    <Content Include="Iconos\LIMPIAR\icons8-broom%281%29.png" />
+    <Content Include="Iconos\LIMPIAR\icons8-broom%282%29.png" />
+    <Content Include="Iconos\LIMPIAR\icons8-broom%283%29.png" />
+    <Content Include="Iconos\LIMPIAR\icons8-broom%284%29.png" />
+    <Content Include="Iconos\LIMPIAR\icons8-broom%285%29.png" />
+    <Content Include="Iconos\LIMPIAR\icons8-broom%286%29.png" />
+    <Content Include="Iconos\LIMPIAR\icons8-broom%287%29.png" />
+    <Content Include="Iconos\LIMPIAR\icons8-broom%288%29.png" />
+    <Content Include="Iconos\LIMPIAR\icons8-broom.png" />
+    <None Include="Iconos\LISTADO\List_40px.png" />
+    <None Include="Iconos\LISTADO\Combo Chart_100px.png" />
+    <None Include="Iconos\LISTADO\Combo Chart_40px.png" />
+    <None Include="Iconos\LISTADO\Bulleted List_25px.png" />
+    <Content Include="Iconos\LOGIN\icons8_Signin_32px.png" />
+    <None Include="Iconos\LOGO EFFECTIVE\Effective-Logo.png" />
+    <None Include="Iconos\LOGO EFFECTIVE\Effective-MarcadeAgua.png" />
+    <None Include="Iconos\LOGO EFFECTIVE\Effective-MarcadeAgua2.png" />
+    <None Include="Iconos\LOGO EFFECTIVE\Effective-Logo-1.png" />
+    <None Include="Iconos\LOGO EFFECTIVE\Effective-MarcadeAgua3.png" />
+    <None Include="Iconos\LOGO EFFECTIVE\Effective-MarcadeAgua4.png" />
+    <None Include="Iconos\LOGO EFFECTIVE\Effective-Logo-2.png" />
+    <None Include="Iconos\LOGO EFFECTIVE\Effective-MarcadeAgua5.png" />
+    <None Include="Iconos\LOGO EFFECTIVE\Effective-Logo-3.png" />
+    <Content Include="Iconos\LOGOUT\icons8_Logout_Rounded_Up_32px.png" />
+    <Content Include="Iconos\Maintenance_32px.png" />
+    <None Include="Iconos\MARCAS\Honda_100px.png" />
+    <None Include="Iconos\MARCAS\HONDA.png" />
+    <None Include="Iconos\MARCAS\Sin título-4.png" />
+    <None Include="Iconos\MARCAS\Honda-560x361.png" />
+    <Content Include="Iconos\MENSAJES\icons8_Attention_100px.png" />
+    <Content Include="Iconos\MENSAJES\icons8_Double_Tick_100px.png" />
+    <Content Include="Iconos\MENSAJES\icons8_Important_Note_100px_1.png" />
+    <None Include="Iconos\MODIFICAR\AMARILLO\Edit_30px.png" />
+    <None Include="Iconos\MODIFICAR\AMARILLO\Edit_25px.png" />
+    <Content Include="Iconos\MODIFICAR\AMARILLO\icons8-edit%281%29.png" />
+    <Content Include="Iconos\MODIFICAR\AMARILLO\icons8-edit%282%29.png" />
+    <Content Include="Iconos\MODIFICAR\AMARILLO\icons8-edit%283%29.png" />
+    <Content Include="Iconos\MODIFICAR\AMARILLO\icons8-edit%284%29.png" />
+    <Content Include="Iconos\MODIFICAR\AMARILLO\icons8-edit-file.png" />
+    <Content Include="Iconos\MODIFICAR\AMARILLO\icons8_Edit_30px.png" />
+    <Content Include="Iconos\MODIFICAR\AMARILLO\icons8_Edit_File_30px.png" />
+    <Content Include="Iconos\MODIFICAR\icons8_Check_File_20px.png" />
+    <Content Include="Iconos\MODIFICAR\icons8_Delete_25px.png" />
+    <Content Include="Iconos\MODIFICAR\icons8_Delete_File_20px.png" />
+    <Content Include="Iconos\MODIFICAR\icons8_Edit_25px.png" />
+    <Content Include="Iconos\MODIFICAR\icons8_Edit_25px_1.png" />
+    <Content Include="Iconos\MODIFICAR\icons8_Edit_File_20px.png" />
+    <Content Include="Iconos\MODIFICAR\icons8_Plus_Math_25px.png" />
+    <Content Include="Iconos\MODIFICAR\icons8_Waste_25px.png" />
+    <Content Include="Iconos\MODIFICAR\VERDE\icons8-edit.png" />
+    <Content Include="Iconos\MOSTACHO\icons8-handlebar-mustache%281%29.png" />
+    <Content Include="Iconos\MOSTACHO\icons8-handlebar-mustache%282%29.png" />
+    <Content Include="Iconos\MOSTACHO\icons8-handlebar-mustache%283%29.png" />
+    <Content Include="Iconos\MOSTACHO\icons8-handlebar-mustache.png" />
+    <None Include="Iconos\MOTOS\Motorcycle_40px.png" />
+    <None Include="Iconos\MOTOS\Motorcycle_30px_bk2.png" />
+    <None Include="Iconos\MOTOS\Historial_Motos.png" />
+    <None Include="Iconos\MOTOS\icons8_Dirt_Bike_40px.png" />
+    <Content Include="Iconos\PRODUCCION\AMARILLO\icons8-deployment%282%29.png" />
+    <Content Include="Iconos\PRODUCCION\AMARILLO\icons8-deployment%285%29.png" />
+    <Content Include="Iconos\PRODUCCION\AMARILLO\icons8_Deployment_40px.png" />
+    <Content Include="Iconos\PRODUCCION\AZUL\icons8-deployment%287%29.png" />
+    <Content Include="Iconos\PRODUCCION\AZUL\icons8-deployment.png" />
+    <Content Include="Iconos\PRODUCCION\ROJO\icons8-deployment%281%29.png" />
+    <Content Include="Iconos\PRODUCCION\ROJO\icons8-deployment%286%29.png" />
+    <Content Include="Iconos\PRODUCCION\VERDE\icons8-deployment%283%29.png" />
+    <Content Include="Iconos\PRODUCCION\VERDE\icons8-deployment%284%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-safety-hat %281%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-safety-hat %282%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-safety-hat %283%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-safety-hat %284%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-safety-hat %285%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-safety-hat %286%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-safety-hat %287%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-safety-hat.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier %281%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier %282%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%281%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%2810%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%2811%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%2812%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%2813%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%2814%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%2815%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%2816%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%282%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%283%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%284%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%285%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%286%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%287%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%288%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier%289%29.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-supplier.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-truck-filled.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8-truck.png" />
+    <None Include="Iconos\PROVEEDORES\icons8_Add_Administrator_40px.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8_Add_Administrator_40px_1.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8_Edit_Account_40px.png" />
+    <None Include="Iconos\PROVEEDORES\icons8_Find_Administrator_40px_1.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8_Manager_40px.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8_Remove_Administrator_40px.png" />
+    <Content Include="Iconos\PROVEEDORES\icons8_Supplier_40px.png" />
+    <Content Include="Iconos\REPORTES\AMARILLO\icons8_Purchase_Order_40px.png" />
+    <None Include="Iconos\SEGURIDAD\Data Protection_100px.png" />
+    <Content Include="Iconos\SEGURIDAD\icons8_Lock_2_40px.png" />
+    <Content Include="Iconos\SEGURIDAD\icons8_Lock_40px.png" />
+    <Content Include="Iconos\SEGURIDAD\icons8_Padlock_100px.png" />
+    <None Include="Iconos\SEGURIDAD\Lock_100px.png" />
+    <None Include="Iconos\SEGURIDAD\icons8_Password_100px_1.png" />
+    <Content Include="Iconos\SIGUIENTE\icons8-forward-button%281%29.png" />
+    <Content Include="Iconos\SIGUIENTE\icons8-forward-button.png" />
+    <Content Include="Iconos\SIGUIENTE\icons8_Circled_Right_30px.png" />
+    <Content Include="Iconos\SIGUIENTE\icons8_Circled_Right_40px.png" />
+    <Content Include="Iconos\SIGUIENTE\icons8_Forward_Button_30px.png" />
+    <Content Include="Iconos\SIGUIENTE\icons8_Forward_Button_40px.png" />
+    <Content Include="Iconos\SIGUIENTE\icons8_Right_30px.png" />
+    <None Include="Iconos\SIGUIENTE\Next page_30px.png" />
+    <None Include="Iconos\SINCRONIZAR\Synchronize_25px.png" />
+    <Content Include="Iconos\STOKYRCH.png" />
+    <Content Include="Iconos\Stouky.ico" />
+    <Content Include="Iconos\STOUKY.png" />
+    <Content Include="Iconos\STOUKY2.png" />
+    <Content Include="Iconos\STOUKY3.ico" />
+    <Content Include="Iconos\STOUKY33.png" />
+    <Content Include="Iconos\STOUKY4.ico" />
+    <Content Include="Iconos\VENTAS\AMARILLO\icons8-sell%284%29.png" />
+    <Content Include="Iconos\VENTAS\AMARILLO\icons8-sell.png" />
+    <Content Include="Iconos\VENTAS\AMARILLO\icons8_Sell_40px.png" />
+    <Content Include="Iconos\VENTAS\AMARILLO\icons8_Sell_Stock_40px.png" />
+    <None Include="Iconos\VENTAS\AMARILLO\Money Bag_40px.png" />
+    <Content Include="Iconos\VENTAS\AZUL\icons8-sell%282%29.png" />
+    <Content Include="Iconos\VENTAS\AZUL\icons8-sell%283%29.png" />
+    <Content Include="Iconos\VENTAS\ROJO\icons8-sell%281%29.png" />
+    <Content Include="Iconos\VENTAS\ROJO\icons8-sell%285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
